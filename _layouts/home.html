@@ -2,13 +2,64 @@
 layout: default
 ---
 
-<div class="home">
+<main class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h2 class="page-heading">Selected Works</h2>
   
-  {{ content }}
+  <ul class="projects">
+    <li>
+      <a href="//bostonglobe.com/elections/2016" target="_blank" class="project__title">Elections 2016 /</a> 
+      Boston Globe
+      <a href="https://github.com/BostonGlobe/elections-2016" target="_blank" class="project__github">{% include icon-github.svg %}</a>
 
-  <ul class="post-list">
+    <li>
+      <a href="https://apps.bostonglobe.com/news/politics/graphics/2017/01/unbowed/" class="project__title">Unbowed /</a>
+      Boston Globe
+      <a href="https://github.com/BostonGlobe/unbowed" target="_blank" class="project__github">{% include icon-github.svg %}</a>
+
+    <li>
+      <a href="https://www.youtube.com/watch?v=zMXcUZEU1Hw" target="_blank" class="project__title">WordCamp 2016 /</a>
+      Speaker
+
+    <li>
+      <a href="//newenglandvegfest.com" target="_blank" class="project__title">New England Vegfest /</a>
+      Founder, Organizer, Web Developer
+
+    <li>
+      <a href="https://gopperman.github.io/Vizer" target="_blank" class="project__title">Vizer /</a>
+      Data Visualization Generator
+      <a href="https://github.com/gopperman/Viser" target="_blank" class="project__github">{% include icon-github.svg %}</a>
+
+    <li>
+      <a href="//shack-up.co" class="project__title">ShackUp /</a>
+      Tinder for Real Estate
+      <a href="https://github.com/gopperman/shackup" target="_blank" class="project__github">{% include icon-github.svg %}</a>
+
+    <li>
+      <a href="https://shop.bdgastore.com/" target="_blank" class="project__title">Bodega /</a>
+      for ICS
+
+    <li>
+      <a href="//hallandoat.es" target="_blank" class="project__title">HallandOat.es /</a>
+      Incredibly Smooth
+      <a href="/https://github.com/gopperman/hallandoates" target="_blank" class="project__github">{% include icon-github.svg %}</a>
+
+    <li>
+      <a href="http://wheatoncollege.edu/map/" target="_blank" class="project__title">Wheaton Map /</a>
+      Interactive Campus Visualization
+      <a href="https://github.com/WheatonCollege/map" target="_blank" class="project__github">{% include icon-github.svg %}</a>
+
+    <li>
+      <a href="//breedtv.com/" target="_blank" class="project__title">BreedTV /</a>
+      An exercise in eternal curation
+      <a href="https://github.com/gopperman/breedtv" target="_blank" class="project__github">{% include icon-github.svg %}</a>
+
+    <li>
+      <a href="https://gopperman.github.io/burger-roulette/" target="_blank" class="project__title">Burger Roulette /</a>
+      <a href="https://github.com/gopperman/burger-roulette" target="_blank" class="project__github">{% include icon-github.svg %}</a>
+  </ul>
+
+<!--  <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -18,8 +69,5 @@ layout: default
         </h2>
       </li>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-</div>
+  </ul>-->
+</main>
