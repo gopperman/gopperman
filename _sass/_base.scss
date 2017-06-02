@@ -1,4 +1,136 @@
 // Add your styles here
-body {
-	background: red;
+header {
+	background: url(img/woods.gif) no-repeat center center fixed, linear-gradient(45deg,#222,#666);
+	background-blend-mode: multiply, multiply;
+	background-size: cover, cover;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+	height: 98vh;
+
+	color: #fff;
+	text-align: center;
+	font-size: 3.4rem;
+	font-family: "Lucida Console", Monaco, monospace;
+
+	h1 {
+		font-size: 1.2em;
+		text-transform: uppercase;
+		margin: 0 0 .6em 0;
+	}
+
+	p {
+		font-size: .7em;
+		margin: 0;
+		text-transform: uppercase;
+
+		&:last-child {
+			font-size: .5em;
+		}
+	}
+}
+
+footer {
+	background: url(img/mudkip.gif) no-repeat center center fixed, linear-gradient(45deg,#222,#999);
+	background-blend-mode: multiply, multiply;
+	background-size: cover, cover;
+
+	width: 100vw;
+	height: 100vh;
+
+	color: #fff;
+	padding: 100px 0 0 40px;
+
+	h2 {
+		margin: 0;
+
+		& + p {
+			font-size: 1.4em;
+			margin-bottom: 1em;
+		}
+	}
+
+	h3 {
+		margin-top: 3em;
+		font-weight: bold;
+	}
+
+	p {
+		margin: 0;
+		line-height: 1.6em;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+		&:hover, &:active, &:focus {
+			color: white;
+			cursor: hand;
+			cursor: pointer;
+			text-decoration: none;
+			border-bottom: 1px solid white;
+		}
+	}
+}
+
+.page-heading {
+	background: #f1f1f1;
+	font-size: 3em;
+	margin: 0;
+	padding: 1em 0 1em 40px;
+}
+
+.projects {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		font-size: 1.8em;
+		border-top: 1px solid #aaa;
+		background: #fff;
+		color: #777;
+		display: block;
+		padding: 25px 0 25px 40px;
+		text-decoration: none;
+		width: 100%;
+		transition: background, .2s;
+
+		&:hover, &:active, &:focus {
+			background: #f1f1f1;
+		}
+
+	}
+}
+
+.project {
+	&__title {
+		color: #222;
+		font-size: 1.2em;
+		font-weight: bold;
+
+		&:hover, &:active, &:focus {
+			color: #222;
+			text-decoration: none;
+		}
+	}
+	&__github {
+		font-size: 1.2em;
+		&:hover, &:active, &:focus {
+			color: #222;
+			text-decoration: none;
+		}
+	}
+}
+
+@media screen and (min-width:768px) {
+	.project {
+		&__github {
+			float: right;
+			margin-right: 40px;
+		}
+	}
 }
