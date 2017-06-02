@@ -16,7 +16,7 @@
 title: Greg Opperman
 email: gopperman@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Greg Opperman is a Software Developer, occasional artist, and pizza enthusiast in Worcester, MA.
+  Greg Opperman is a software developer, occasional artist, and pizza enthusiast in Worcester, MA.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://gopperman.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gopperman
